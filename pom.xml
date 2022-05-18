@@ -120,6 +120,11 @@
       <build>
         <plugins>
           <plugin>
+          <groupId>org.eclipse.jkube</groupId>
+          <artifactId>openshift-maven-plugin</artifactId>
+          <version>1.7.0</version>
+          </plugin>
+          <plugin>
             <artifactId>maven-failsafe-plugin</artifactId>
             <version>${surefire-plugin.version}</version>
             <executions>
@@ -142,6 +147,8 @@
       </build>
       <properties>
         <quarkus.package.type>native</quarkus.package.type>
+        <jkube.build.strategy>jib</jkube.build.strategy>
+        <jkube.generator.name>quay.io/tkervran/antennas-front</jkube.generator.name>
       </properties>
     </profile>
   </profiles>
