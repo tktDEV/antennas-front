@@ -11,6 +11,6 @@ public class HelloResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello RESTEasy TEST TRIGGER 333";
+        return "Hello RESTEasy TEST TRIGGER NO SECRETS";
     }
 }
